@@ -5,7 +5,8 @@ build
 # Local dir for Gradle
 .gradle
 
-# Eclipse metadata
+# Eclipse metadata and target dir
 .project
 .classpath
 .settings
+bin
