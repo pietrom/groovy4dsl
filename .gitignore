@@ -2,6 +2,9 @@
 target
 build
 
+# Local dir for Gradle
+.gradle
+
 # Eclipse metadata
 .project
 .classpath
