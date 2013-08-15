@@ -1,0 +1,8 @@
+# Target directories for Maven and Gradle
+target
+build
+
+# Eclipse metadata
+.project
+.classpath
+.settings
