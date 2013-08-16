@@ -5,12 +5,12 @@ import static org.junit.Assert.*
 import org.junit.Before
 import org.junit.Test
 
-class BasicGreetingsSourceTest {
+class DynamicGreetingsSourceTest {
 	private GreetingsSource source;
 
 	@Before
 	def void initGreetingsSource() {
-		source = new BasicGreetingsSource(greetings: "Hello");
+		source = new DynamicGreetingsSource(greetings: "Hello");
 	}
 	
 	@Test
@@ -25,7 +25,7 @@ class BasicGreetingsSourceTest {
 	
 	@Test
 	def void sayCustomHelloToCustomTarget() {
-		GreetingsSource customSource = new BasicGreetingsSource(greetings: "Hi");
+		GreetingsSource customSource = new DynamicGreetingsSource(greetings: "Hi");
 		assertEquals("Hi, Peter!", customSource.sayHelloTo("Peter"))
 	}
 }

@@ -1,6 +1,6 @@
 package org.amicofragile.groovy4dsl.inheritance
 
-class BasicGreetingsSource implements GreetingsSource {
+class DynamicGreetingsSource implements GreetingsSource {
 	private String greetings;
 	
 	@Override
