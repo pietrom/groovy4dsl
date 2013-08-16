@@ -1,11 +1,19 @@
 apply plugin: 'eclipse'
 apply plugin: 'groovy'
 
-repositories {
-	mavenCentral()
-}
+repositories { mavenCentral() }
 
 dependencies {
 	compile 'org.codehaus.groovy:groovy-all:2.1.6'
 	testCompile 'junit:junit:4.11'
+}
+
+sourceSets {
+	main {
+		java { srcDirs = []}
+		groovy { srcDirs = [
+				'src/main/java',
+				'src/main/groovy']
+		}
+	}
 }
