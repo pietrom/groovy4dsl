@@ -10,7 +10,7 @@ class BasicGreetingsSourceTest {
 
 	@Before
 	def void initGreetingsSource() {
-		source = new BasicGreetingsSource();
+		source = new BasicGreetingsSource(greetings: "Hello");
 	}
 	
 	@Test
@@ -21,5 +21,11 @@ class BasicGreetingsSourceTest {
 	@Test
 	def void sayHelloToCustomTarget() {
 		assertEquals("Hello, Peter!", source.sayHelloTo("Peter"))
+	}
+	
+	@Test
+	def void sayCustomHelloToCustomTarget() {
+		GreetingsSource customSource = new BasicGreetingsSource(greetings: "Hi");
+		assertEquals("Hi, Peter!", customSource.sayHelloTo("Peter"))
 	}
 }
