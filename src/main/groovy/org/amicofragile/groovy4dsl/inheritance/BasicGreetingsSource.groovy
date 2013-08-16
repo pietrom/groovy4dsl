@@ -4,7 +4,7 @@ class BasicGreetingsSource implements GreetingsSource {
 
 	@Override
 	def String sayHello() {
-		"Hello, World!"
+		sayHelloTo("World")
 	}
 
 	@Override
