@@ -3,7 +3,7 @@ package org.amicofragile.groovy4dsl.inheritance
 class DynamicGreetingsSource implements GreetingsSource {
 	def String greetings;
 	
-	public DynamicGreeetingsSource(String greetings) {
+	public DynamicGreetingsSource(String greetings) {
 		this.greetings = greetings;
 	}
 	

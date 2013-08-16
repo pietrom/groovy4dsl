@@ -10,7 +10,7 @@ class DynamicGreetingsSourceTest {
 
 	@Before
 	def void initGreetingsSource() {
-		source = new DynamicGreetingsSource(greetings: "Hello");
+		source = new DynamicGreetingsSource("Hello");
 	}
 	
 	@Test
@@ -25,7 +25,7 @@ class DynamicGreetingsSourceTest {
 	
 	@Test
 	def void sayCustomHelloToCustomTarget() {
-		GreetingsSource customSource = new DynamicGreetingsSource(greetings: "Hi");
+		GreetingsSource customSource = new DynamicGreetingsSource("Hi");
 		assertEquals("Hi, Peter!", customSource.sayHelloTo("Peter"))
 	}
 }
